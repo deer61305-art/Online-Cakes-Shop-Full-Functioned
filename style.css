@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color:  hsl(13, 31%, 94%);
+}
+body.dark{
+    background-color: black;
+    color: white;
+}
+body.dark button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+body.dark button img{
+ filter: brightness(0) invert(1);
+}
+body.dark button:hover{
+    background-color: white;
+    color: black;
+}
+body.dark button:hover img{
+    filter: grayscale(100%);
+}
+body.dark .textDiv p{
+    color: white;
+}
+body.dark .textDiv h4{
+    color: white;
+}
+body.dark .textDiv h5{
+    color: white;
+}
+body.dark .OrderDiv{
+    background-color: white;
+    color: black;
+}
+body.dark .OrderDiv h1{
+    color: black;
+}
+body.dark .OrderDiv h4{
+    color: black;
+}
+.main{
+    width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: self-start;
+
+}
+h1{
+    font-size: 35px;
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    gap: 20px;
+    flex-direction: column;
+}
+.Start{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Start i{
+    cursor: pointer;
+}
+.CakesDiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 40px;
+}
+.cake{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.cake img{
+  width: 190px;
+  height: 190px;
+  border-radius: 10px;
+}
+.textDiv{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 4px;
+}
+.textDiv p{
+    color: hsl(7, 20%, 60%);
+}
+.textDiv h4{
+    color: hsl(14, 65%, 9%);
+}
+.textDiv h5{
+    color: hsl(14, 86%, 42%);
+    font-size: 17px
+}
+.cake button{
+    width: 82%;
+    height: 38px;
+    border-radius: 16px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid hsl(7, 20%, 60%);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 16px;
+}
+.cake button img{
+    width: 24px;
+    height: 24px;
+}
+.cake button:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+}
+.cake button:hover img{
+    filter: brightness(0) invert(1);
+}
+.OrderDiv{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.Hdiv{
+    align-items: self-start;
+    width: 85%;
+}
+.OrderDiv h1{
+    color: hsl(14, 86%, 42%);
+    font-size: 34px
+}
+.OrderDiv h4{
+    color:  hsl(7, 20%, 60%);
+}
+.imgDIVORDER{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+@media (max-width: 1024px){
+     .OrderDiv{
+    width: 300px;
+    height: 250px;
+  }
+}
+@media (max-width: 900px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     flex-direction: column;
+    }
+    .OrderDiv{
+    width: 90%;
+    height: 250px;
+  }
+
+     .CakesDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 70px;
+}
+
+.cake img{
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+}
+@media (max-width: 660px) {
+
+     .CakesDiv{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+  }
+
+.cake img{
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+}
+@media (max-width: 600px){
+    .OrderDiv{
+    width: 90%;
+    height: 250px;
+  }
+
+     .CakesDiv{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+}
+
+.cake img{
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+}
+@media (max-width: 768px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     flex-direction: column;
+    }
+    .OrderDiv{
+    width: 90%;
+    height: 250px;
+  }
+}
+@media (max-width: 430px){
+   .CakesDiv{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 20px;
+}
+.cake{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.cake img{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.textDiv{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 4px;
+}
+}
+@media(max-width: 320px){
+   body{
+    display: none;
+   }
+}
